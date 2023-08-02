@@ -1,0 +1,46 @@
+{
+  "$id": "https://raw.githubusercontent.com/cyentific-rni/cacao-coordinates-extension/main/schemas/connection.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "connection",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "type": {
+      "$ref": "#/$defs/connection-type-enum",
+      "description": "The type of connection being used. \n\nThe value for this property MUST come from the connection-type-enum enumeration."
+    },
+    "x": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "This property represent the X coordinates of the connection. It MUST contain at least one value for a straight line. \n\nThis property is strongly connected with the y property. Both x and y lists MUST have the same number of elements (as they together create a point on the canvas)."
+    },
+    "y": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "This property represent the Y coordinates of the connection. It MUST contain at least one value for a straight line. \n\nThis property is strongly connected with the x property. Both x and y lists MUST have the same number of elements (as they together create a point on the canvas)."
+    }
+  },
+  "required": [
+    "type",
+    "x",
+    "y"
+  ],
+  "$defs": {
+    "connection-type-enum": {
+      "type": "string",
+      "enum": [
+        "on_completion",
+        "on_success",
+        "on_failure",
+        "on_true",
+        "on_false",
+        "cases",
+        "next_steps"
+      ]
+    }
+  }
+}

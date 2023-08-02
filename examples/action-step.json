@@ -1,0 +1,65 @@
+{
+    "type": "playbook",
+    "spec_version": "cacao-2.0",
+    "id": "playbook--5cbe5101-3bd3-436f-8efe-d4c409241c31",
+    "name": "Example playbook with one action step",
+    "created_by": "identity--e6d6ec0d-16ff-444d-869c-8404e111617e",
+    "created": "2023-08-02T22:06:43.374Z",
+    "modified": "2023-08-02T22:06:43.374Z",
+    "workflow_start": "start--acb92320-76ee-425f-be1e-d5c91784d14b",
+    "workflow": {
+      "start--acb92320-76ee-425f-be1e-d5c91784d14b": {
+        "on_completion": "action--b0404823-683a-4315-8726-f4f68c84b9d2",
+        "type": "start",
+        "step_extension": {
+            "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+                "type": "coordinates",
+                "x": 100,
+                "y": 100,
+                "width": 70,
+                "height": 50,
+                "outgoing_connections": [
+                    {
+                        "type": "on_completion",
+                        "x": [250],
+                        "y": [100]
+                    }
+                ]
+            }
+        } 
+      },
+      "action--b0404823-683a-4315-8726-f4f68c84b9d2": {
+        "on_completion": "end--91dd3e6f-c11c-47ec-b21a-e0eafdc64e3f",
+        "type": "action",
+        "step_extension": {
+            "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+                "type": "coordinates",
+                "x": 250,
+                "y": 100,
+                "width": 100,
+                "height": 50,
+                "outgoing_connections": [
+                    {
+                        "type": "on_completion",
+                        "x": [400],
+                        "y": [100]
+                    }
+                ]
+            }
+        } 
+      },
+      "end--91dd3e6f-c11c-47ec-b21a-e0eafdc64e3f": {
+        "type": "end"
+      }
+    },
+    "extension_definitions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+            "type": "extension-definition",
+            "name": "Coordinates extension",
+            "description": "Coordinates extension for CACAO constructs for visualization purposes.",
+            "created_by": "identity--e6d6ec0d-16ff-444d-869c-8404e111617e",
+            "schema": "https://raw.githubusercontent.com/cyentific-rni/cacao-coordinates-extension/main/schemas/coordinates.json",
+            "version": "1.0.0"
+         }
+    }
+  }
