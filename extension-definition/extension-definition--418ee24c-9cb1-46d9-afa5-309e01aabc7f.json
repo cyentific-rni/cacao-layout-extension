@@ -1,6 +1,6 @@
 {
    "type": "extension-definition",
-   "name": "Coordinates extension",
+   "name": "coordinates extension",
    "description": "Coordinates extension for CACAO constructs for visualization purposes.",
    "created_by": "identity--e6d6ec0d-16ff-444d-869c-8404e111617e",
    "schema": "https://raw.githubusercontent.com/cyentific-rni/cacao-coordinates-extension/main/schemas/coordinates.json",
