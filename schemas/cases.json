@@ -17,7 +17,7 @@
         },
         "case": {
           "type": "string",
-          "description": "A string that represents the case value."
+          "description": "A string that represents the case value (which is a dictionary key in a CACAO Switch Condition Step). The case value of this property MUST match a dictionary key as defined in the dictionary of a CACAO Switch Condition Step."
         }
       }
     }

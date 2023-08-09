@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/cyentific-rni/cacao-coordinates-extension/main/schemas/on_failure.json",
+  "$id": "https://raw.githubusercontent.com/cyentific-rni/cacao-coordinates-extension/main/schemas/on-true.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "on_failure",
+  "title": "on-true",
   "allOf": [
     {
       "$ref": "/connection.json"
@@ -10,9 +10,9 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "The value of this property MUST be 'on_failure'.",
+          "description": "The value of this property MUST be 'on-true'.",
           "enum": [
-            "on_failure"
+            "on-true"
           ]
         }
       }
