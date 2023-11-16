@@ -1,0 +1,28 @@
+{
+    "$id": "https://raw.githubusercontent.com/cyentific-rni/cacao-coordinates-extension/main/schemas/canvas.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "canvas",
+    "description": "The canvas object indicates the size (in pixels) of the canvas to display the visualized CACAO playbook. The object MUST be populated using the playbook_extensions property as described in Section 3.1 of the CACAO specification [CACAO-Security-Playbooks-v2.0]).",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["canvas"],
+        "description": "The value of this property MUST be 'canvas'."
+      },
+      "canvas_width": {
+        "type": "integer",
+        "description": "A positive number representing the width of the canvas. This number refers to pixels."
+      },
+      "canvas_height": {
+        "type": "integer",
+        "description": "A positive number representing the height of the canvas. This number refers to pixels."
+      }
+    },
+    "required": [
+      "type",
+      "canvas_width",
+      "canvas_height"
+    ]
+  }
+  
