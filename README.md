@@ -1,5 +1,10 @@
 # CACAO Layout Specification Version 1.0
 
+**Note: In December 2023, Cyentific AS offered and transferred the content of this repository, meaning the CACAO Layout validation schemas, extension definition, and utilization example to the OASIS CACAO TC (https://github.com/oasis-tcs/cacao), which will be further maintained as an open-source product.**
+
+---
+``Deprecated``
+
 This repository provides with the CACAO Layout extension definition, validation schemas and full playbook example for the purpose of visually representing CACAO playbooks as accurate and consistent to the extent possible across implementations.
 
 The CACAO specification permits extending the playbooks schema via extension definitions that provide detailed information about the extensions that are in use in a playbook.
