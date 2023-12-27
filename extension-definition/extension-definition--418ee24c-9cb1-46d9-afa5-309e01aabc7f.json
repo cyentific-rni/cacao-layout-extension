@@ -3,7 +3,7 @@
   "name": "CACAO Layout",
   "description": "Extension definition for diagramming CACAO playbooks.",
   "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
-  "schema": "https://github.com/oasis-tcs/cacao/tree/master/Extensions/layout/schemas/layout.json",
+  "schema": "https://raw.githubusercontent.com/oasis-tcs/cacao/master/Extensions/layout/schemas/layout.json",
   "version": "1.0.0",
   "external_references": [
     {
