@@ -1,17 +1,16 @@
 {
-   "type": "extension-definition",
-   "name": "CACAO coordinates",
-   "description": "Extension definition for Coordinates allowing CACAO Playbooks to be graphically represented on a canvas.",
-   "created_by":"identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
-   "schema": "https://github.com/cyentific-rni/cacao-coordinates-extension/blob/main/schemas/coordinates.json",
-   "version":"1.0.0",
-   "external_references": [
-     {
-       "name": "CACAO Coordinates Specification.",
-       "description": "Specification for CACAO Playbooks Canvas and Coordinates.",
-       "source": "[CACAO-Coordinates-Schema-v1.0] CACAO Coordinates Schema Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 07 November 2023. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/coordinates/v1.0/csd01/coordinates-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/coordinates/v1.0/coordinates-v1.0.html.",
-       "url": "https://docs.google.com/document/d/1eWRxX3kKELOU_08ee013vDRrWYRu9JqS2LIt4Nk-F10/edit"
-     }
-   ]
- }
- 
+  "type": "extension-definition",
+  "name": "CACAO Layout",
+  "description": "Extension definition for diagramming CACAO playbooks.",
+  "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+  "schema": "https://github.com/oasis-tcs/cacao/tree/master/Extensions/layout/schemas/layout.json",
+  "version": "1.0.0",
+  "external_references": [
+    {
+      "name": "CACAO Layout Specification.",
+      "description": "Specification for diagramming CACAO Playbooks graphically.",
+      "source": "[CACAO-Layout-Schema-v1.0] CACAO Layout Schema Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 12 December 2023. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/layout/v1.0/csd01/layout-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html.",
+      "url": "https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html"
+    }
+  ]
+}
